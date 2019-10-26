@@ -1,11 +1,11 @@
-name: amber_modular
+name: amber-vue
 version: 0.1.0
 
 authors:
-   - Damian Hamill <damianham@gmail.com>
+   - Sean Watters <sean@watters.io>
 
 description: |
-   Granite based ORM modular application recipe
+   A Vue.js front-end recipe for the Amber framework.
 
 license: MIT
 
