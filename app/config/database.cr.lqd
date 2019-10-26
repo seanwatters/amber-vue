@@ -1,0 +1,6 @@
+
+require "granite/adapter/{{ database }}"
+
+Granite::Adapters << Granite::Adapter::{{ database | capitalize }}.new({ name: "{{ database }}", url: Amber.settings.database_url })
+Granite.settings.logger = Amber.settings.logger.dup
+Granite.settings.logger.progname = "Granite"

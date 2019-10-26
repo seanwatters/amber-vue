@@ -1,0 +1,61 @@
+class {{ class_name }}Controller < ApplicationController
+  getter {{ name }} = {{ class_name }}.new
+
+  before_action do
+    only [:show, :edit, :update, :destroy] { set_{{ name }} }
+  end
+
+  def index
+    {{ name | pluralize }} = {{ class_name }}.all
+    render_module "index.{{language}}"
+  end
+
+  def show
+    render_module "show.{{ language }}"
+  end
+
+  def new
+    render_module "new.{{ language }}"
+  end
+
+  def edit
+    render_module "edit.{{ language }}"
+  end
+
+  def create
+    {{ name }} = {{ class_name }}.new {{ name }}_params.validate!
+    if {{ name }}.valid? && {{ name }}.save
+      redirect_to action: :index, flash: {"success" => "Created {{ name }} successfully."}
+    else
+      flash["danger"] = "Could not create {{ class_name }}!"
+      render_module "new.{{ language }}"
+    end
+  end
+
+  def update
+    {{ name }}.set_attributes {{ name }}_params.validate!
+    if {{ name }}.valid? && {{ name }}.save
+      redirect_to action: :index, flash: {"success" => "Updated {{ name }} successfully."}
+    else
+      flash["danger"] = "Could not update {{ class_name }}!"
+      render_module "edit.{{ language }}"
+    end
+  end
+
+  def destroy
+    {{ name }}.destroy
+    redirect_to action: :index, flash: {"success" => "Deleted {{ name }} successfully."}
+  end
+
+  def {{ name }}_params
+    params.validation do
+    {% for field in visible_fields -%}
+    {{"  "}}required :{{ field.name }}{% if field.type == "reference" %}_id{% endif %} { |f| !f.nil? }
+    {% endfor -%}
+    end
+  end
+
+  private def set_{{ name }}
+    @{{ name }} = {{ class_name }}.find! params[:id]
+  end
+end
