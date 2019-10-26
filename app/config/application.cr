@@ -11,7 +11,6 @@ require "amber"
 require "./settings"
 require "./i18n"
 require "./database"
-require "./initializers/**"
 
 # Start Generator Dependencies: Don't modify.
 # End Generator Dependencies
@@ -20,14 +19,7 @@ require "../src/controllers/application_controller"
 require "../src/controllers/**"
 require "./routes"
 
-
-require "./initializers/**"
-
 require "amber"
 
 require "../src/controllers/application_controller"
 require "../src/controllers/**"
-
-# load the module renderer so we can organize our code in modules
-require "amber_render_module"
-require "../src/modules/**"
