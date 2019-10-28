@@ -1,15 +1,17 @@
 <p align="center">
-    <img src="https://camo.githubusercontent.com/b6fe127b8e2cd5bc9c568350674382ee2954024b/68747470733a2f2f7365616e776174746572732e696f2f696d616765732f616d6265722d7675652e706e67" alt="amber-vue" data-canonical-src="https://seanwatters.io/images/amber-vue.png" width="200" height="165" style="">
+    <img src="https://camo.githubusercontent.com/b6fe127b8e2cd5bc9c568350674382ee2954024b/68747470733a2f2f7365616e776174746572732e696f2f696d616765732f616d6265722d7675652e706e67" alt="amber-vue" data-canonical-src="https://seanwatters.io/images/amber-vue.png" width="220" height="180" style="">
 </p>
 
 <br>
 
 <p align="center">
-    <i>The Speed and Performance of Amber with the ease of development in Vue.js</i>
+    <a href="https://amberframework.org/"><img src="https://img.shields.io/badge/using-amber_framework-orange.svg" ></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" ></a>
 </p>
 
-[![Amber Framework](https://img.shields.io/badge/using-amber_framework-orange.svg)](https://amberframework.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+<p align="center">
+    <i>The Speed and Performance of Amber with the ease of development in Vue.js</i>
+</p>
 
 <br>
 
