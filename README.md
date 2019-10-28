@@ -102,12 +102,13 @@ For any questions specific to the [Vue.js](https://vuejs.org/) or [Amber](https:
 
 ## DevTools
 
-When developing Vue.js applications, it is highly recommended to use the [Vue.js devtools](https://github.com/vuejs/vue-devtools). Currently only FireFox and Chrome have support for the devtools extension, but their links are provided below:
+When developing Vue.js applications, it is highly recommended to use the [Vue.js devtools](https://github.com/vuejs/vue-devtools). Currently only FireFox and Chrome have support for the devtools extension. Their links are provided below:
 
 FireFox: [devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
 Chrome: [devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
 
+<br>
 <br>
 
 You can also use the standalone Electron app **vue-remote-devtools** for any enviornment:
