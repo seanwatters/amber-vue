@@ -11,6 +11,7 @@ The goal of the **amber-vue** recipe is to quickly provide a full stack sollutio
 
 The intention is to break away from the traditional Rails-y MVC model, without requiring developers to write completely separate frontend/backend codebases. 
 
+<br>
 
 ## Creating a Project
 
@@ -35,6 +36,7 @@ amber w
 
 Your application will be running on `localhost:9090`.
 
+<br>
 
 ## File Structure
 
@@ -67,6 +69,8 @@ With this recipe, we have modularized the file structure to isolate your fronten
          
 ```
 
+<br>
+
 ## CLI
 
 The scaffold, controller and model generators are currently a work in progress. The scaffold generator can be used currently but the routes need to be set manually in the `config/routes.cr` file to drop `edit` and `new` views. i.e:
@@ -76,6 +80,8 @@ resources "<pluralized route name>", <route name>Controller, except: [:edit, :ne
 ```
 
 The README will be updated as soon as the generators have full functionality.
+
+<br>
 
 ## Documentation
 
@@ -91,6 +97,8 @@ When developing Vue.js applications, it is highly recommended to use the [Vue.js
 FireFox: [devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
 Chrome: [devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
+
+<br>
 
 ## License
 
