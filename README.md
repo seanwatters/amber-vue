@@ -76,3 +76,7 @@ When developing Vue.js applications, it is highly recommended to use the [Vue.js
 FireFox: [devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
 Chrome: [devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
