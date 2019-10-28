@@ -65,6 +65,7 @@ With this recipe, we have modularized the file structure to isolate your fronten
             |- HelloWorld.vue
         |- App.vue
     |- main.js
+    
 |- lib
 |- public
 |- spec
@@ -72,6 +73,7 @@ With this recipe, we have modularized the file structure to isolate your fronten
     |- controllers
         |- application_controller.cr
         |- roots_controller.cr    // Controller for the primary route.
+        
     |- locales
     |- models
     |- views
