@@ -23,7 +23,7 @@ amber new <your app name> -r seanwatters/amber-vue
 
 ## File Structure
 
-With this recipe, we have modularized the file structure to issolate your frontend code in Vue.js from your Amber API.
+With this recipe, we have modularized the file structure to isolate your frontend code in Vue.js from your Amber API.
 
 ```
 |- bin
@@ -51,3 +51,20 @@ With this recipe, we have modularized the file structure to issolate your fronte
             |- root.slang   // Location of the root #app <div> Vue will render to.
          
 ```
+
+## CLI
+
+The scaffold, controller and model generators are currently a work in progress. The scaffold generator can be used currently but the routes need to be set manually in the `config/routes.cr` file to drop `edit` and `new` views. i.e:
+
+```
+resources "<pluralized route name>", <route name>Controller, except: [:edit, :new]
+```
+
+The README will be updated as soon as the generators have full functionality.
+
+## Documentation
+
+For any questions specific to the [Vue.js](https://vuejs.org/) or [Amber](https://amberframework.org/) frameworks, please feel free to refer to their excellent documentation below:
+
+* [Vue.js](https://vuejs.org/v2/guide/)
+* [Amber](https://docs.amberframework.org/amber/)
