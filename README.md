@@ -1,4 +1,4 @@
-![amber-vue](https://seanwatters.io/amber-vue.png)
+![amber-vue](https://seanwatters.io/images/amber-vue.png)
 
 
 # amber-vue
