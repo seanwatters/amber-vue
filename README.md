@@ -12,7 +12,6 @@
 </p>
 
 <br>
-<br>
 
 # Amber with Vue.js
 
