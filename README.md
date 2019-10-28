@@ -108,6 +108,8 @@ FireFox: [devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtoo
 
 Chrome: [devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
 
+<br>
+
 You can also use the standalone electron app with **vue-remote-devtools** for any enviornment:
 
 Remote: [devtools](https://github.com/vuejs/vue-devtools/blob/master/shells/electron/README.md)
