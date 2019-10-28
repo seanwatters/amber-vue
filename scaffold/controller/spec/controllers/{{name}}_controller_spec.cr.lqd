@@ -39,45 +39,24 @@ end
 describe {{ class_name }}ControllerTest do
   subject = {{ class_name }}ControllerTest.new
 
-  it "renders {{ name }} index template" do
-    {{ class_name }}.clear
-    response = subject.get "/{{ name | pluralize }}"
+  # it "renders {{ name }} index template" do
+  #  {{ class_name }}.clear
+  #  response = subject.get "/{{ name | pluralize }}"
+  #
+  #  response.status_code.should eq(200)
+  #  response.body.should contain("{{ display_name | pluralize }}")
+  # end
 
-    response.status_code.should eq(200)
-    response.body.should contain("{{ display_name | pluralize }}")
-  end
-
-  it "renders {{ name }} show template" do
-    {{ class_name }}.clear
-    model = create_{{ name | underscore }}
-    location = "/{{ name | pluralize }}/#{model.id}"
-
-    response = subject.get location
-
-    response.status_code.should eq(200)
-    response.body.should contain("Show {{ display_name }}")
-  end
-
-  it "renders {{ name }} new template" do
-    {{ class_name }}.clear
-    location = "/{{ name | pluralize }}/new"
-
-    response = subject.get location
-
-    response.status_code.should eq(200)
-    response.body.should contain("New {{ display_name }}")
-  end
-
-  it "renders {{ name }} edit template" do
-    {{ class_name }}.clear
-    model = create_{{ name | underscore }}
-    location = "/{{ name | pluralize }}/#{model.id}/edit"
-
-    response = subject.get location
-
-    response.status_code.should eq(200)
-    response.body.should contain("Edit {{ display_name }}")
-  end
+  # it "renders {{ name }} show template" do
+  #  {{ class_name }}.clear
+  #  model = create_{{ name | underscore }}
+  #  location = "/{{ name | pluralize }}/#{model.id}"
+  #
+  #  response = subject.get location
+  #
+  #  response.status_code.should eq(200)
+  #  response.body.should contain("Show {{ display_name }}")
+  # end
 
   it "creates a {{ name }}" do
     {{ class_name }}.clear
