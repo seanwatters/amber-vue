@@ -33,7 +33,7 @@ cd <your app name>
 amber w
 ```
 
-Now your application will be running on `localhost:9090`.
+Your application will be running on `localhost:9090`.
 
 
 ## File Structure
