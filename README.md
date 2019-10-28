@@ -110,7 +110,7 @@ Chrome: [devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdo
 
 <br>
 
-You can also use the standalone electron app with **vue-remote-devtools** for any enviornment:
+You can also use the standalone Electron app **vue-remote-devtools** for any enviornment:
 
 Remote: [devtools](https://github.com/vuejs/vue-devtools/blob/master/shells/electron/README.md)
 
