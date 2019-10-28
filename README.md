@@ -6,3 +6,46 @@ _The Speed and Performance of Amber with the ease of development in Vue.js_
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # Amber with Vue.js
+
+The goal of the **amber-vue** recipe is to quickly provide a full stack sollution that takes full advantages of the best parts of development using a frontend framework (in the way it was designed to be used) automatically linked to a powerfull backend API with a familiar structure. 
+
+We are intentionally breaking away from the typical Rails-y MVC model, without forcing developers to write completely separate frontend/backend applications. 
+
+## Creating a Project
+
+To create your project with **amber-vue** you will need to run the following command:
+
+```
+amber new <your app name> -r seanwatters/amber-vue
+```
+
+## File Structure
+
+With this recipe, we have modularized the file structure to issolate your frontend code in Vue.js from your Amber API.
+
+```
+|- bin
+|- config
+|- db
+|- frontend-vue   // Vue.js file tree structure.
+    |- src
+        |- assets
+        |- components
+            |- HelloWorld.vue
+        |- App.vue
+    |- main.js
+|- lib
+|- public
+|- spec
+|- src
+    |- controllers
+        |- application_controller.cr
+        |- roots_controller.cr    // Controller for the primary route.
+    |- locales
+    |- models
+    |- views
+        |- layouts
+        |- roots
+            |- root.slang   // Location of the root #app <div> Vue will render to.
+         
+```
