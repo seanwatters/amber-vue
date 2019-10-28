@@ -7,18 +7,33 @@ _The Speed and Performance of Amber with the ease of development in Vue.js_
 
 # Amber with Vue.js
 
-The goal of the **amber-vue** recipe is to quickly provide a full stack sollution that takes full advantages of the best parts of development using a frontend framework (in the way it was designed to be used), linked to a powerfull backend API with a familiar structure. 
+The goal of the **amber-vue** recipe is to quickly provide a full stack sollution that takes full advantages of the best parts of development using a frontend framework (in the way it was designed to be used), with a powerfull backend API.
 
-We are intentionally breaking away from the typical Rails-y MVC model, without forcing developers to write completely separate frontend/backend applications. 
+The intention is to break away from the traditional Rails-y MVC model, without requiring developers to write completely separate frontend/backend codebases. 
 
 
 ## Creating a Project
 
-To create your project with **amber-vue** you will need to run the following command:
+To create your project with the **amber-vue** recipe, you will need to run the following command:
 
 ```
 amber new <your app name> -r seanwatters/amber-vue
 ```
+
+You may also want to specify your database (default is Postgres) by adding the `-d` tag:
+
+```
+amber new <your app name> -r seanwatters/amber-vue -d <pg | mysql | sqlite>
+```
+
+Once your app has been created, you will want to run
+
+```
+cd <your app name>
+amber w
+```
+
+Now your application will be running on `localhost:9090`.
 
 
 ## File Structure
