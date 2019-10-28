@@ -68,3 +68,10 @@ For any questions specific to the [Vue.js](https://vuejs.org/) or [Amber](https:
 
 * [Vue.js](https://vuejs.org/v2/guide/)
 * [Amber](https://docs.amberframework.org/amber/)
+
+## DevTools
+
+When developing Vue.js applications, it is highly recommended to use the [Vue.js devtools](https://github.com/vuejs/vue-devtools). Currently only FireFox and Chrome have support for the devtools extension, but their links are provided below:
+
+FireFox: [devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+Chrome: [devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
