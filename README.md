@@ -1,7 +1,8 @@
 <p align="center">
-    <img src="https://camo.githubusercontent.com/b6fe127b8e2cd5bc9c568350674382ee2954024b/68747470733a2f2f7365616e776174746572732e696f2f696d616765732f616d6265722d7675652e706e67" alt="amber-vue" data-canonical-src="https://seanwatters.io/images/amber-vue.png" width="220" height="180" style="">
+    <img src="https://camo.githubusercontent.com/b6fe127b8e2cd5bc9c568350674382ee2954024b/68747470733a2f2f7365616e776174746572732e696f2f696d616765732f616d6265722d7675652e706e67" alt="amber-vue" data-canonical-src="https://seanwatters.io/images/amber-vue.png" width="225" height="180" style="">
 </p>
 
+<br>
 <br>
 
 <p align="center">
@@ -13,6 +14,7 @@
     <i>The Speed and Performance of Amber with the ease of development in Vue.js</i>
 </p>
 
+<br>
 <br>
 
 # Amber with Vue.js
