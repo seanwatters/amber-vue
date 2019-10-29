@@ -29,13 +29,13 @@ export default {
   #amber-logo {
     height: 200px;
     width: 200px;
-    padding-right: 120px;
+    padding-right: 115px;
   }
   #vue-logo {
     height: 175px;
     width: 175px;
     margin-top: -125px;
-    padding-left: 120px;
+    padding-left: 115px;
   }
   .amber-text {
     font-family: Dosis, Open Sans, sans-serif;
