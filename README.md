@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-    <i>The Speed and Performance of Amber with the ease of development in Vue.js</i>
+    <i>The Speed and Performance of Amber with the ease of development in Vue</i>
 </p>
 
 <br>
