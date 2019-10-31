@@ -1,44 +1,15 @@
+const inquirer = require('inquirer');
 const write = require('write');
-const readline = require("readline");
 const exec = require('child_process').exec;
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-const generator = () => {
-  rl.question("\n\nAvailable generators -- api, component, scaffold, \n\nGenerator: ", (generator) => {
-    switch(generator) {
-      case 'api':
-        api()
-        break;
-      case 'componenet':
-        component()
-        break;
-      case 'scaffold':
-        scaffold()
-        break;
-      default:
-        generator()
-    }
+const api = (model, attributes) => {
+  exec(`npm run vue-api ${model} ${attributes}`, () => {
+    console.log('\nAPI Generated')
   });
 };
 
-const api = () => {
-  rl.question("provide the model for the api\n i.e BlogPost\n\nmodel: ", (model) => {
-    rl.question("provide the attributes for the api model\n i.e title body:text \nattributes: ", (attributes) => {
-      exec(`npm run vue-api ${model} ${attributes}`);
-      process.exit(0)
-    });
-  });
-};
-
-const component = (scaffold = false) => {
-  rl.question("Component Name: ", (name) => {
-    rl.question("Component State: ", (state) => {
-      rl.question("Component Props: ", (props) => {
-        write.sync(`frontend-vue/src/components/${name}.vue`, `<template>
+const component = (name, state = null, props = null) => {
+  write.sync(`frontend-vue/src/components/${name}.vue`, `<template>
   <div class=${name}>
     <h3>I am ${name}!</h3>
   </div>
@@ -66,14 +37,112 @@ export default {
     font-weight: lighter;
   }
 </style>`, { overwrite: false });
-        console.log('\nComponent Created')
-        scaffold ? api() : process.exit(0);
-      });
-    });
-  });
+  console.log('\nComponent Created')
 };
 
-const scaffold = () => {
-  component(true)
-};
-generator()
+inquirer.prompt([
+  {
+    type: 'list',
+    message: 'Select generator',
+    name: 'generator',
+    choices: [
+      {
+        name: 'scaffold'
+      },
+      {
+        name: 'component'
+      },
+      {
+        name: 'api'
+      }
+    ]
+  }
+])
+.then(answers => {
+  switch(answers.generator) {
+    case 'scaffold':
+      inquirer.prompt([
+        {
+          type: 'input',
+          name: 'component_name',
+          message: "Component Name: "
+        },
+        {
+          type: 'input',
+          name: 'component_state',
+          message: "Component State: "
+        },
+        {
+          type: 'input',
+          name: 'component_props',
+          message: "Component Props: "
+        }
+      ])
+      .then(answers => {
+        component(answers.component_name,
+                   answers.component_state,
+                   answers.component_props)
+
+        inquirer.prompt([
+          {
+            type: 'input',
+            name: 'model',
+            message: "model: "
+          },
+          {
+            type: 'input',
+            name: 'attributes',
+            message: "attributes: "
+          }
+        ])
+        .then(answers => {
+          api(answers.model, answers.attributes)
+        })
+      })
+      break;
+    case 'component':
+      inquirer.prompt([
+        {
+          type: 'input',
+          name: 'component_name',
+          message: "Component Name: "
+        },
+        {
+          type: 'input',
+          name: 'component_state',
+          message: "Component State: "
+        },
+        {
+          type: 'input',
+          name: 'component_props',
+          message: "Component Props: "
+        }
+      ])
+      .then(answers => {
+        componenet(answers.component_name,
+                   answers.component_state,
+                   answers.component_props)
+      })
+      break;
+    case 'api':
+      inquirer.prompt([
+        {
+          type: 'input',
+          name: 'model',
+          message: "model: "
+        },
+        {
+          type: 'input',
+          name: 'attributes',
+          message: "attributes: "
+        }
+      ])
+      .then(answers => {
+        api(answers.model, answers.attributes)
+      })
+      break;
+    default:
+      generator()
+      break;
+  }
+});
