@@ -9,7 +9,10 @@
     "build": "webpack --config config/webpack/development.js",
     "watch": "webpack -w --config config/webpack/development.js",
     "release": "webpack -p --config config/webpack/production.js",
-    "test": "echo \"No test specified\" && exit 1"
+    "test": "echo \"No test specified\" && exit 1",
+
+    "vue-tools": "node frontend-vue/dev/vue-tools.js",
+    "vue-api": "amber generate api "
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -21,7 +24,8 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.2.1",
-    "webpack-merge": "^4.1.2"
+    "webpack-merge": "^4.1.2",
+    "write": "^2.0.0"
   },
   "dependencies": {
     "vue": "2.6.10",
