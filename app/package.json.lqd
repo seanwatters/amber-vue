@@ -10,11 +10,10 @@
     "watch": "webpack -w --config config/webpack/development.js",
     "release": "webpack -p --config config/webpack/production.js",
     "test": "echo \"No test specified\" && exit 1",
-    "vue-tools": "node frontend-vue/dev/vue-tools.js",
-    "vue-api": "amber generate api "
+    "vue-tools": "node frontend-vue/dev/vue-tools.js"
   },
   "devDependencies": {
-    "amber-vue-cli": "^0.1.1",
+    "amber-vue-cli": "^0.1.4",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "babel-loader": "^8.0.5",
