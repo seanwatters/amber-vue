@@ -20,6 +20,7 @@
     "babel-loader": "^8.0.5",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
+    "inquirer": "^7.0.0",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.28.1",
