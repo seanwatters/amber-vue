@@ -83,13 +83,22 @@ With this recipe, we have modularized the file structure to isolate your fronten
 
 ## CLI
 
-The scaffold, controller and model generators are currently a work in progress. The scaffold generator can be used currently but the routes need to be set manually in the `config/routes.cr` file to drop `edit` and `new` views. i.e:
+The **amber-vue-cli** is a tool for scaffolding APIs, and components. To use the CLI, you will need to install the tool with `npm install`. You will then need to run:
 
 ```
-resources "<pluralized route name>", <route name>Controller, except: [:edit, :new]
+npm run vue-tools
 ```
 
-The README will be updated as soon as the generators have full functionality.
+When you run the CLI, you should see the following:
+
+```
+? select generator
+> componenet  // vue component generator
+> scaffold  // **currently doesn't have full functionality**
+> api  // will generate a full CRUD API in amber
+```
+
+Please feel free to also reference the **amber-vue-cli** [docs](https://github.com/seanwatters/amber-vue-cli)!
 
 <br>
 
