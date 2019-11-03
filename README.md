@@ -26,7 +26,7 @@ The intention is to break away from the traditional Rails-y MVC model, without r
 
 ## Creating a Project
 
-To create your project with the **amber-vue** recipe, you will need to run the following command:
+To create your project with the **amber-vue** recipe, you will need to run the following command: 
 
 ```
 amber new <your app name> -r seanwatters/amber-vue
