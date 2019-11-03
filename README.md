@@ -86,7 +86,7 @@ With this recipe, we have modularized the file structure to isolate your fronten
 
 ## CLI
 
-The **amber-vue-cli** is a tool for scaffolding APIs, and components. To use the CLI, you will need to install the tool with `npm install`. You will then need to run:
+The **amber-vue-cli** is a tool for scaffolding APIs, and components. To use the CLI, you will need to install the tool with `npm install` and run:
 
 ```
 npm run vue-tools
@@ -101,7 +101,9 @@ When you run the CLI, you should see the following:
 > api  // will generate a full CRUD API in amber
 ```
 
-Please feel free to also reference the **amber-vue-cli** [docs](https://github.com/seanwatters/amber-vue-cli)!
+You can generate components, full CRUD scaffolds and JSON APIs. 
+
+Please feel free to reference the **amber-vue-cli** [docs](https://github.com/seanwatters/amber-vue-cli) for a more in depth breakdown!
 
 <br>
 
