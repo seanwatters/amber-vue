@@ -70,15 +70,14 @@ With this recipe, we have modularized the file structure to isolate your fronten
 |- spec
 |- src
     |- controllers
-        |- application_controller.cr
-        |- roots_controller.cr    // Controller for the primary route.
+        |- application_controller.cr  // the root is rendered here
         
     |- locales
     |- models
     |- views
         |- layouts
-        |- roots
-            |- root.slang   // Location of the root #app <div> Vue will render to.
+        |- application
+            |- application.slang   // Location of the root #app <div> Vue will render to.
          
 ```
 
