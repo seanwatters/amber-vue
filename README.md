@@ -70,7 +70,7 @@ With this recipe, we have modularized the file structure to isolate your fronten
 |- spec
 |- src
     |- controllers
-        |- application_controller.cr  // the root is rendered here
+        |- application_controller.cr  // the root is rendered in the application controller
         
     |- locales
     |- models
